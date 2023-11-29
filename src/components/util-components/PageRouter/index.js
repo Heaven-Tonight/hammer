@@ -4,7 +4,6 @@ import Loading from 'components/shared-components/Loading';
 
 const PageRouter = ({ routes, from, to, align, cover }) => {
 	const { url } = useRouteMatch();
-	const loadingProps = {align, cover}
 	return (
 		<Suspense fallback={<Loading {...loadingProps}/>}>
       <Switch>
@@ -18,4 +17,4 @@ const PageRouter = ({ routes, from, to, align, cover }) => {
 	)
 }
 
-export default PageRouter
+export default PageRouter;
